@@ -1,17 +1,11 @@
-#write a python programme to input two numbers and swap their values . Display the values before and after switching
-#method01
-N1=int(input("Enter Number 01: "))
-N2=int(input("Enter Number 02: "))
-print(N1," " ,N2)
-N1,N2=N2,N1
-print(N1," " ,N2)
-
-
-#method02
-N1=int(input("Enter Number 01: "))
-N2=int(input("Enter Number 02: "))
-x=N2
-Y=N1
-print(N1," ", N2)
-print(x," ", Y)
-
+#Student Scholarship Eligibility
+#student Attendance
+SA=float(input("Enter Student's Attendance Percentage : "))
+AM=float(input("Enter Student's Average Mark : "))
+if SA>=80 :
+    if AM>=75:
+        print("Scholarship Awarded")
+    else:
+        print("Scholarship NOT Awarded")
+else:
+    print("Insufficient Attendance")

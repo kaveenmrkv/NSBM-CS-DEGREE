@@ -1,7 +1,12 @@
-#write a python programme to input a number and determine whetehre its positive or negative
-N1=int(input("Enter the Number 01 :"))
-
-if N1>=0:
-    print(N1, ": is a positive number.")
+#Employee Promotion System
+#Performance Score
+EP=float(input("Enter the Employees Performance Score Percentage : "))
+#Years of Service
+YS=int(input("Enter the years of service : "))
+if EP>=85:
+    if YS>=3:
+        print("Promotion Approved")
+    else:
+        print("More Expirience Needed")
 else:
-    print(N1, ": is a negative number.")
+    print("Performance Improvement Required")

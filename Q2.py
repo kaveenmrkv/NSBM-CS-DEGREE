@@ -1,7 +1,30 @@
-#write a python programme to input two number and display the largest number
-N1=int(input("Enter the Number 01 :"))
-N2=int(input("Enter the Number 02 :"))
-if N1>N2:
-    print(N1, ": is the largest number.")
+#Online SHopping Discount
+#Member Status
+MS=str(input("Enter Customers Status :"))
+PA=float(input("Enter The Purchase Amount in LKR :"))
+if MS=="premium":
+    if PA>=10000:
+        print("20% Discount Applied")
+
+    else:
+        print("10% Discount Applied")
 else:
-    print(N2, ": is the largest number.")
+    print("No discount Available")
+
+
+    
+#------------------------------ver02
+
+#Member Status
+MS=str(input("Enter Customers Status if premium (Y) Else (N):"))
+PA=float(input("Enter The Purchase Amount in LKR :"))
+if MS=="Y":
+    if PA>=10000:
+        print("20% Discount Applied")
+
+    else:
+        print("10% Discount Applied")
+else:
+    print("No discount Available")
+
+
