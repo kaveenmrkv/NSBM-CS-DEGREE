@@ -1,30 +1,14 @@
-#Online SHopping Discount
-#Member Status
-MS=str(input("Enter Customers Status :"))
-PA=float(input("Enter The Purchase Amount in LKR :"))
-if MS=="premium":
-    if PA>=10000:
-        print("20% Discount Applied")
-
+#ATM CAHS WITHDRAWAL
+pin=str(input("Enter Your Bank Pin : "))
+AB=20000
+if pin=="1234":
+    WA=int(input("Enter Withdrawal Amount : "))
+    if WA<AB:
+        print("You have Sufficient Balance for a withdrawal")
+        rem=AB-WA
+        print(WA, " LKR Withdrawn &", rem,  "LKR Remaining")
     else:
-        print("10% Discount Applied")
+         print("Balance Insufficient for withdrawal")
 else:
-    print("No discount Available")
-
-
+    print("Incorrect PIN")
     
-#------------------------------ver02
-
-#Member Status
-MS=str(input("Enter Customers Status if premium (Y) Else (N):"))
-PA=float(input("Enter The Purchase Amount in LKR :"))
-if MS=="Y":
-    if PA>=10000:
-        print("20% Discount Applied")
-
-    else:
-        print("10% Discount Applied")
-else:
-    print("No discount Available")
-
-

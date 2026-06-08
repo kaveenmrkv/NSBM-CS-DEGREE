@@ -1,11 +1,18 @@
-#Student Scholarship Eligibility
-#student Attendance
-SA=float(input("Enter Student's Attendance Percentage : "))
-AM=float(input("Enter Student's Average Mark : "))
-if SA>=80 :
-    if AM>=75:
-        print("Scholarship Awarded")
+#Voting Eligibility Verification
+#age
+age=int(input("Enter Your Age : "))
+cit=str(input("Are you a Citizen (Y/N)"))
+nic=str(input("Is your NIC Vaild (Y/N)"))
+
+if age>=18:
+    if cit=="Y":
+        if nic=="Y":
+            print("You are Eligible to Vote")
+        else:
+            print("You are not Eligible to Vote")
     else:
-        print("Scholarship NOT Awarded")
+        print("You are not Eligible to Vote")
+        
 else:
-    print("Insufficient Attendance")
+    print("You are not Eligible to Vote")
+        

@@ -1,12 +1,11 @@
-#Employee Promotion System
-#Performance Score
-EP=float(input("Enter the Employees Performance Score Percentage : "))
-#Years of Service
-YS=int(input("Enter the years of service : "))
-if EP>=85:
-    if YS>=3:
-        print("Promotion Approved")
+#Loan Approval System
+sal=int(input("Enter Your Monthly Salary in LKR: "))
+CS=float(input("Enter Your Credit Score: "))
+if sal>=50000:
+    if CS>=700:
+        print("Eligible for the Loan")
     else:
-        print("More Expirience Needed")
+         print("NOT Eligible for the Loan")
 else:
-    print("Performance Improvement Required")
+    print("NOT Eligible for the Loan")
+        

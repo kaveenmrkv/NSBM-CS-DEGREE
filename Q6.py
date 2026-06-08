@@ -1,7 +1,16 @@
-#write a programme to check if a number is even or odd
-N=int(input("Enter the Number you wanna check: "))
-
-if N%2==1:
-    print("The number is even")
+#Grade Classification
+RoomA=1
+id=str(input("Is the ID VAILD (Y/N) :"))
+ap=str(input("Is the Advanced payment done (Y/N) :"))
+nights=int(input("Enter the nights count that the customer is staying : "))
+if RoomA==1:
+    if id=="Y":
+        if ap=="Y":
+            if nights>=1:
+                print("Successfully Checked IN")
+            else:
+                print("Check IN Failed")
+        else:
+            print("Check IN Failed")
 else:
-    print("The number is odd")
+    print("Successfully Checked IN")

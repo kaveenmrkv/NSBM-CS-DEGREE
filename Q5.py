@@ -1,6 +1,13 @@
-#write a python programme to input a persons age and determine his/her ability to vote
-age=int(input("Enter your age : "))
-if age>=18:
-    print("You are Eligible to vote")
+#Grade Classification
+SM=int(input("Enter the Student Marks: "))
+if SM>=50:
+    if SM>64:
+        if SM>74:
+              print("Grade A")
+        else:
+            print("Grade B")
+    else:
+        print("Grade C")
 else:
-    print("You are not Eligible to vote ")
+    print("Failed")
+            
