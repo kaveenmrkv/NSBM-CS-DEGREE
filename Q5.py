@@ -1,13 +1,8 @@
-#Grade Classification
-SM=int(input("Enter the Student Marks: "))
-if SM>=50:
-    if SM>64:
-        if SM>74:
-              print("Grade A")
-        else:
-            print("Grade B")
-    else:
-        print("Grade C")
-else:
-    print("Failed")
-            
+#Average of marks
+S=0
+while True:
+    N=int(input("Enter your Mark : "))
+    if N==-1:
+        break
+    S=S+N
+print("Sum is , ", S) 

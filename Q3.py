@@ -1,11 +1,8 @@
-#Loan Approval System
-sal=int(input("Enter Your Monthly Salary in LKR: "))
-CS=float(input("Enter Your Credit Score: "))
-if sal>=50000:
-    if CS>=700:
-        print("Eligible for the Loan")
-    else:
-         print("NOT Eligible for the Loan")
-else:
-    print("NOT Eligible for the Loan")
-        
+#SUM of 10 numbers
+S=0
+x=int(input("How many numbers do you want to find the sum of : "))
+while x>0:
+    N=int(input("Enter your Number : "))
+    S=S+N
+    x=x-1
+print("The Sum of the numbers is :", S)

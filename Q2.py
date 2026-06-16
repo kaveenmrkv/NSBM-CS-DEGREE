@@ -1,14 +1,12 @@
-#ATM CAHS WITHDRAWAL
-pin=str(input("Enter Your Bank Pin : "))
-AB=20000
-if pin=="1234":
-    WA=int(input("Enter Withdrawal Amount : "))
-    if WA<AB:
-        print("You have Sufficient Balance for a withdrawal")
-        rem=AB-WA
-        print(WA, " LKR Withdrawn &", rem,  "LKR Remaining")
-    else:
-         print("Balance Insufficient for withdrawal")
+#Bonus Calculator
+#Salary AMT
+S=float(input("Enter The Salary Amount :"))
+if S>=100000:
+    bonus=S*(15/100)
+    print("Bonus Amount is :", bonus ,"LKR" )
+elif S>50000:
+    bonus=S*(10/100)
+    print("Bonus Amount is :", bonus ,"LKR" )
 else:
-    print("Incorrect PIN")
-    
+    bonus=S*(5/100)
+    print("Bonus Amount is :", bonus ,"LKR" )
