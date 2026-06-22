@@ -1,71 +1,19 @@
-#Plane Temp MGMT SYSTEM
-
-E_01=float(input("Enter Engine 1 Temp in Celecius: "))
-E_02=float(input("Enter Engine 2 Temp in Celecius: "))
-E_03=float(input("Enter Engine 3 Temp in Celecius: "))
-E_04=float(input("Enter Engine 4 Temp in Celecius: "))
-safe_e=0
-main_e=0
-
-#engine01
-
-if E_01>200:
-    if E_01<800:
-        print("Engine 1:safe")
-        safe_e=safe_e+1
+#student attendance
+count=10
+ec=0
+nec=0
+tot=0
+while count>0:
+    att=int(input("Enter the attendance precentage : "))
+    if att>=75:
+        ec=ec+1
     else:
-        print("Engine 1:Maintainance Required")
-        main_e=main_e+1
-
-else:
-     print("Engine 1:Maintainance Required")
-     main_e=main_e+1
-
-#engine02
-
-if E_02>200:
-    if E_02<800:
-        print("Engine 2:safe")
-        safe_e=safe_e+1
-    else:
-        print("Engine 2:Maintainance Required")
-        main_e=main_e+1
-
-else:
-     print("Engine 2:Maintainance Required")
-     main_e=main_e+1
-
-#engine03
-
-if E_03>200:
-    if E_03<800:
-        print("Engine 3:safe")
-        safe_e=safe_e+1
-    else:
-        print("Engine 3:Maintainance Required")
-        main_e=main_e+1
-
-else:
-     print("Engine 3:Maintainance Required")
-     main_e=main_e+1
-
-#engine04
-
-if E_04>200:
-    if E_04<800:
-        print("Engine 4:safe")
-        safe_e=safe_e+1
-    else:
-        print("Engine 4:Maintainance Required")
-        main_e=main_e+1
-
-else:
-     print("Engine 4:Maintainance Required")
-      main_e=main_e+1
-
-#Finale Output
-print("Safe Engines : ", safe_e)
-print("Maintenance Required : ", main_e)
-
-
+        nec=nec+1
+    count=count-1
+    tot=tot+att
+avg=tot/10
+    
+print("The total number of eligible students is  : ", ec)
+print("The total number of non-eligible students is  : ", nec)
+print("The average student attendance perecentage is ", avg)
         
