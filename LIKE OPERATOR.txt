@@ -1,0 +1,35 @@
+-- 1. Create the Agents table
+CREATE TABLE Agents (
+    AGENT_CODE VARCHAR(10) PRIMARY KEY,
+    AGENT_NAME VARCHAR(50),
+    WORKING_AREA VARCHAR(50),
+    COMMISSION DECIMAL(5, 2),
+    PHONE_NO VARCHAR(20),
+    COUNTRY VARCHAR(50)
+);
+
+-- 2. Insert the data
+INSERT INTO Agents (AGENT_CODE, AGENT_NAME, WORKING_AREA, COMMISSION, PHONE_NO, COUNTRY) VALUES 
+('A007', 'Ranasundar', 'Bangalore', 15, '772581476', 'India'),
+('A003', 'Alex', 'London', 13, '751245896', 'England'),
+('A008', 'Alford', 'New York', 12, '442587436', 'New Zealand'),
+('A011', 'Ravi Kumar', 'Bangalore', 15, '774562587', 'Pakistan'),
+('A010', 'Santakumar', 'Chennai', 14, '722388644', 'India'),
+('A012', 'Lucida', 'San Jose', 10, '452981425', 'USA'),
+('A005', 'Anderson', 'Brisban', 13, '421447739', 'England'),
+('A001', 'Subbarao', 'Bangalore', 14, '772346674', 'India'),
+('A002', 'Mukesh', 'Mumbai', 11, '291238964', 'India'),
+('A006', 'McDen', 'London', 15, '782225588', 'England'),
+('A004', 'Ivan', 'Toronto', 15, '882254166', 'Canada'),
+('A009', 'Benjamin', 'Hampshair', 11, '882536178', 'Canada');
+
+/*
+Like Operator
+Used to find wilcard characters , text pattersn ex: names where "singhe" is present.
+
+%text% - used for multiple characters 
+_text_ - used for single character
+
+*/
+
+SELECT*FROM Agents WHERE WORKING_AREA LIKE '%Bang%' ;
